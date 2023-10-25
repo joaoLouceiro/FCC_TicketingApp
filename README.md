@@ -13,3 +13,12 @@ https://www.freecodecamp.org/news/use-next-js-tailwind-css-and-mongodb-to-build-
 2. Tailwind
    a) In the tailwind.config.js file, we can create css defaults for our application (need to dig into that).
    b) The globals.css file is set up with @base, @components and @utilities. Things can overwrite other properties depending on which one we're using.
+
+3. Mongo and Mongoose
+   a) Mongoose complements MongoDB by allowing the setting of Types.
+   b) A Cluster is a group of Databases
+
+4. Connecting to MongoDB
+   a) After creating the DB (using the MongoDB web interface), go to Database > Connect > Drivers and copy the connection string into your application code
+   b) Paste it inside .env.local, at the project's root folder
+   c) Connect to it using mongoose.connect(process.env.<CONNECTION_STRING_VARIABLE>);
